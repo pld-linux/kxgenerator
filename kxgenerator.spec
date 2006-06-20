@@ -16,7 +16,7 @@ BuildRequires:	rpmbuild(macros) >= 1.129
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-kX Generator is a utilitty to configure the X server by modyfying
+kX Generator is a utilitty to configure the X server by modifying
 xorg.conf file.
 
 %description -l de

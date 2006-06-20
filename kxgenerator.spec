@@ -14,15 +14,16 @@ BuildRequires:	kdelibs-devel >= 9:3.2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-kX Generator is a utilitty to configure the X server by modyfying xorg.conf file.
+kX Generator is a utilitty to configure the X server by modyfying
+xorg.conf file.
 
 %description -l de
-kX Generator ist ein Programm dass den X Server konfiguriert indem es die
-xorg.conf Datei verändert.
+kX Generator ist ein Programm dass den X Server konfiguriert indem es
+die xorg.conf Datei verändert.
 
 %description -l pl
-kX Generator to narzêdzie do konfiguracji X serwera poprzez modyfikacje
-pliku xorg.conf.
+kX Generator to narzêdzie do konfiguracji X serwera poprzez
+modyfikacje pliku xorg.conf.
 
 %prep
 %setup -q

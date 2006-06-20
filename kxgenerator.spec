@@ -1,3 +1,5 @@
+# TODO:
+#	- use _desktopdir
 Summary:	kX Generator - xorg.conf file generator
 SUmmary(de):	kX Generator - ein xorg.conf Datei Generator
 Summary(pl):	kX Generator - generator pliku xorg.conf
@@ -11,6 +13,7 @@ Source0:	http://www.kde-apps.org/content/files/39085-%{name}-%{version}.tar.bz2
 URL:		http://www.kde-apps.org/content/show.php?content=39085
 BuildRequires:	autoconf
 BuildRequires:	kdelibs-devel >= 9:3.2
+BuildRequires:	rpmbuild(macros) >= 1.129
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description

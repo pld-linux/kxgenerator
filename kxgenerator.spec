@@ -1,5 +1,3 @@
-# TODO:
-#	- use _desktopdir
 Summary:	kX Generator - xorg.conf file generator
 SUmmary(de):	kX Generator - ein xorg.conf Datei Generator
 Summary(pl):	kX Generator - generator pliku xorg.conf
@@ -10,6 +8,7 @@ License:	GPL
 Group:		X11/Applications
 Source0:	http://www.kde-apps.org/content/files/39085-%{name}-%{version}.tar.bz2
 # Source0-md5:	2fc78e92722408cccecfdcaf31ed1559
+Patch0:		%{name}-desktop.patch
 URL:		http://www.kde-apps.org/content/show.php?content=39085
 BuildRequires:	autoconf
 BuildRequires:	kdelibs-devel >= 9:3.2
@@ -30,6 +29,7 @@ modyfikacje pliku xorg.conf.
 
 %prep
 %setup -q
+%patch0 -p0
 
 %build
 %configure
@@ -37,11 +37,15 @@ modyfikacje pliku xorg.conf.
 
 %install
 rm -rf $RPM_BUILD_ROOT
+install -d $RPM_BUILD_ROOT%{_desktopdir}
+install src/%{name}.desktop $RPM_BUILD_ROOT/%{_desktopdir}
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT \
 	kde_htmldir=%{_kdedocdir} \
 	kde_libs_htmldir=%{_kdedocdir}
+
+rm -rf $RPM_BUILD_ROOT%{_datadir}/applnk/Utilities/%{name}.desktop
 
 %find_lang %{name} --with-kde
 
@@ -51,6 +55,6 @@ rm -rf $RPM_BUILD_ROOT
 %files -f %{name}.lang
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog NEWS README TODO
-%attr(755,root,root) %{_bindir}/kxgenerator
-%{_datadir}/applnk/Utilities/kxgenerator.desktop
-%{_iconsdir}/hicolor/64x64/apps/kxgenerator.png
+%attr(755,root,root) %{_bindir}/%{name}
+%{_desktopdir}/%{name}.desktop
+%{_iconsdir}/hicolor/64x64/apps/%{name}.png

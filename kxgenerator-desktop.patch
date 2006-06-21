@@ -6,4 +6,4 @@
  Comment[zh_CN]=一个简单的 KDE 应用程序
 -Categories=Application;SystemSetup;
 \ Brak znaku nowej linii na ko�cu pliku
-+Categories=Qt;KDE;Application;SystemSetup;
++Categories=Qt;KDE;SystemSetup;

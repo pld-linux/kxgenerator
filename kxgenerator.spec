@@ -2,12 +2,12 @@ Summary:	kX Generator - xorg.conf file generator
 SUmmary(de):	kX Generator - ein xorg.conf Datei Generator
 Summary(pl):	kX Generator - generator pliku xorg.conf
 Name:		kxgenerator
-Version:	0.2.1
+Version:	0.2.2
 Release:	1
 License:	GPL
 Group:		X11/Applications
 Source0:	http://www.kde-apps.org/content/files/39085-%{name}-%{version}.tar.bz2
-# Source0-md5:	2fc78e92722408cccecfdcaf31ed1559
+# Source0-md5:	d075abb045f3803e62e61ec9b86b3ff2
 Patch0:		%{name}-desktop.patch
 URL:		http://www.kde-apps.org/content/show.php?content=39085
 BuildRequires:	autoconf

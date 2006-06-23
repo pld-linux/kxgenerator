@@ -25,7 +25,7 @@ die xorg.conf Datei verändert.
 
 %description -l pl
 kX Generator to narzêdzie do konfiguracji X serwera poprzez
-modyfikacje pliku xorg.conf.
+modyfikowanie pliku xorg.conf.
 
 %prep
 %setup -q
@@ -38,14 +38,14 @@ modyfikacje pliku xorg.conf.
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_desktopdir}
-install src/%{name}.desktop $RPM_BUILD_ROOT/%{_desktopdir}
+install src/%{name}.desktop $RPM_BUILD_ROOT%{_desktopdir}
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT \
 	kde_htmldir=%{_kdedocdir} \
 	kde_libs_htmldir=%{_kdedocdir}
 
-rm -rf $RPM_BUILD_ROOT%{_datadir}/applnk/Utilities/%{name}.desktop
+rm -f $RPM_BUILD_ROOT%{_datadir}/applnk/Utilities/%{name}.desktop
 
 %find_lang %{name} --with-kde
 

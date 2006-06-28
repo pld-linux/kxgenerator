@@ -1,9 +1,9 @@
---- src/kxgenerator.desktop	2006-06-19 02:30:32.000000000 +0200
-+++ src/kxgenerator.desktop-new	2006-06-20 19:22:22.098214408 +0200
-@@ -35,4 +35,4 @@
- Comment[tr]=Basit bir KDE Uygulaması
- Comment[uk]=Проста програма KDE
- Comment[zh_CN]=一个简单的 KDE 应用程序
+--- src/kX Generator.desktop.orig	2006-06-25 14:56:35.000000000 +0200
++++ src/kX Generator.desktop	2006-06-28 13:50:11.526145408 +0200
+@@ -1,5 +1,5 @@
+ [Desktop Entry]
 -Categories=Application;SystemSetup;
-\ Brak znaku nowej linii na ko�cu pliku
 +Categories=Qt;KDE;SystemSetup;
+ Comment=Prosty program KDE
+ Comment[pl]=Prosty program KDE
+ Encoding=UTF-8

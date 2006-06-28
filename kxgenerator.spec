@@ -2,12 +2,12 @@ Summary:	kX Generator - xorg.conf file generator
 SUmmary(de):	kX Generator - ein xorg.conf Datei Generator
 Summary(pl):	kX Generator - generator pliku xorg.conf
 Name:		kxgenerator
-Version:	0.2.3
+Version:	0.2.4
 Release:	1
 License:	GPL
 Group:		X11/Applications
 Source0:	http://kgenerator.republika.pl/%{name}-%{version}.tar.bz2
-# Source0-md5:	ea13c561125e75daa53505746a3ec842
+# Source0-md5:	42026bfe7d4062e96f20036933122b83
 Patch0:		%{name}-desktop.patch
 URL:		http://www.kde-apps.org/content/show.php?content=39085
 BuildRequires:	autoconf
@@ -38,7 +38,7 @@ modyfikowanie pliku xorg.conf.
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_desktopdir}
-install src/%{name}.desktop $RPM_BUILD_ROOT%{_desktopdir}
+install src/*.desktop $RPM_BUILD_ROOT%{_desktopdir}
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT \
@@ -56,5 +56,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog NEWS README TODO
 %attr(755,root,root) %{_bindir}/%{name}
-%{_desktopdir}/%{name}.desktop
+%{_desktopdir}/*.desktop
 %{_iconsdir}/hicolor/64x64/apps/%{name}.png

@@ -1,5 +1,5 @@
 Summary:	kX Generator - xorg.conf file generator
-SUmmary(de):	kX Generator - ein xorg.conf Datei Generator
+Summary(de):	kX Generator - ein xorg.conf Datei Generator
 Summary(pl):	kX Generator - generator pliku xorg.conf
 Name:		kxgenerator
 Version:	0.2.7

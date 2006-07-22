@@ -1,9 +1,10 @@
---- src/kX Generator.desktop.orig	2006-06-25 14:56:35.000000000 +0200
-+++ src/kX Generator.desktop	2006-06-28 13:50:11.526145408 +0200
-@@ -1,5 +1,5 @@
- [Desktop Entry]
--Categories=Application;SystemSetup;
+--- src/kxgenerator.desktop	2006-07-22 10:21:50.064899984 +0200
++++ src/kxgenerator.desktop-new	2006-07-22 10:22:34.328170944 +0200
+@@ -4,6 +4,7 @@
+ Exec=kxgenerator
+ Icon=kxgenerator
+ Type=Application
 +Categories=Qt;KDE;SystemSetup;
- Comment=Prosty program KDE
- Comment[pl]=Prosty program KDE
- Encoding=UTF-8
+ Comment=X Server Configuration Utilitty
+ Comment[br]=Ur meziant eeun evit KDE
+ Comment[ca]=Una simple aplicació per al KDE

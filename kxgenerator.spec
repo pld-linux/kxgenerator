@@ -29,7 +29,7 @@ kX Generator to narzêdzie do konfiguracji X serwera poprzez
 modyfikowanie pliku xorg.conf.
 
 %prep
-%setup -q -n %{name}-%{version}
+%setup -q
 %patch0 -p0
 
 %build

@@ -2,13 +2,13 @@ Summary:	kX Generator - xorg.conf file generator
 Summary(de):	kX Generator - ein xorg.conf Datei Generator
 Summary(pl):	kX Generator - generator pliku xorg.conf
 Name:		kxgenerator
-Version:	0.3.2
+Version:	0.3.3
 Release:	1
 License:	GPL
 Group:		X11/Applications
 #Source0:	http://kgenerator.republika.pl/%{name}-%{version}.tar.bz2
-Source0:	http://www.kde-apps.org/content/files/39085-%{name}-%{version}-2.tar.bz2
-# Source0-md5:	b0e202ef57932d7416e35804407ed39c
+Source0:	http://www.kde-apps.org/content/files/39085-%{name}-%{version}.tar.bz2
+# Source0-md5:	3eed6427c389f7c837080e316440bbe0
 Patch0:		%{name}-desktop.patch
 URL:		http://www.kde-apps.org/content/show.php?content=39085
 BuildRequires:	autoconf
@@ -29,7 +29,7 @@ kX Generator to narzêdzie do konfiguracji X serwera poprzez
 modyfikowanie pliku xorg.conf.
 
 %prep
-%setup -q -n %{name}-%{version}-2
+%setup -q -n %{name}-%{version}
 %patch0 -p0
 
 %build

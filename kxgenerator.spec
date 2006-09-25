@@ -10,7 +10,7 @@ Group:		X11/Applications
 Source0:	http://www.kde-apps.org/content/files/39085-%{name}-%{version}.tar.bz2
 # Source0-md5:	a7a7265db997393f2289995398439000
 Patch0:		%{name}-desktop.patch
-URL:		http://www.kde-apps.org/content/show.php?content=39085
+URL:		http://kxgenerator.fe.pl/
 BuildRequires:	autoconf
 BuildRequires:	kdelibs-devel >= 9:3.2
 BuildRequires:	rpmbuild(macros) >= 1.129

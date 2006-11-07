@@ -34,8 +34,8 @@ modyfikowanie pliku xorg.conf.
 
 %build
 cp -f /usr/share/automake/config.sub admin
-%{__make} -f admin/Makefile.common cvs
-
+%{__aclocal}
+%{__autoconf}
 %configure \
 %if "%{_lib}" == "lib64"
 	--enable-libsuffix=64 \

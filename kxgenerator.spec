@@ -10,6 +10,8 @@ Source0:	http://dp0154.debowypark.waw.pl/%{name}-%{version}-pld.tar.bz2
 # Source0-md5:	19ada62058a0a77b18563aa04f6d135e
 Patch0:		%{name}-desktop.patch
 URL:		http://kxgenerator.fe.pl/
+BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRequires:	kdelibs-devel >= 9:3.2
 BuildRequires:	rpmbuild(macros) >= 1.129
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -31,7 +33,14 @@ modyfikowanie pliku xorg.conf.
 %patch0 -p0
 
 %build
-%configure
+%{__aclocal}
+%{__autoconf}
+%{__automake}
+%configure \
+%if "%{_lib}" == "lib64"
+	--enable-libsuffix=64 \
+%endif
+
 %{__make}
 
 %install

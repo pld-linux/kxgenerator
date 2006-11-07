@@ -53,7 +53,8 @@ install src/*.desktop $RPM_BUILD_ROOT%{_desktopdir}
 	kde_htmldir=%{_kdedocdir} \
 	kde_libs_htmldir=%{_kdedocdir}
 
-rm -f $RPM_BUILD_ROOT%{_datadir}/applnk/Utilities/%{name}.desktop
+rm $RPM_BUILD_ROOT%{_datadir}/applnk/Utilities/%{name}.desktop
+rm $RPM_BUILD_ROOT%{_datadir}/applnk/Utilities/kxgenerator-layout.desktop
 
 %find_lang %{name} --with-kde
 

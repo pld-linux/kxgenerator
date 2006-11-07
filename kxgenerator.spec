@@ -3,7 +3,7 @@ Summary(de):	kX Generator - ein xorg.conf Datei Generator
 Summary(pl):	kX Generator - generator pliku xorg.conf
 Name:		kxgenerator
 Version:	0.3.5
-Release:	2
+Release:	3
 License:	GPL
 Group:		X11/Applications
 Source0:	http://dp0154.debowypark.waw.pl/%{name}-%{version}-pld.tar.bz2
@@ -33,9 +33,9 @@ modyfikowanie pliku xorg.conf.
 %patch0 -p0
 
 %build
-%{__aclocal}
-%{__autoconf}
-%{__automake}
+cp -f /usr/share/automake/config.sub admin
+%{__make} -f admin/Makefile.common cvs
+
 %configure \
 %if "%{_lib}" == "lib64"
 	--enable-libsuffix=64 \

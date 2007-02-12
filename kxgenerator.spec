@@ -1,6 +1,6 @@
 Summary:	kX Generator - xorg.conf file generator
-Summary(de):	kX Generator - ein xorg.conf Datei Generator
-Summary(pl):	kX Generator - generator pliku xorg.conf
+Summary(de.UTF-8):   kX Generator - ein xorg.conf Datei Generator
+Summary(pl.UTF-8):   kX Generator - generator pliku xorg.conf
 Name:		kxgenerator
 Version:	0.3.7
 Release:	1
@@ -20,12 +20,12 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 kX Generator is a utilitty to configure the X server by modifying
 xorg.conf file.
 
-%description -l de
+%description -l de.UTF-8
 kX Generator ist ein Programm dass den X Server konfiguriert indem es
-die xorg.conf Datei verändert.
+die xorg.conf Datei verÃ¤ndert.
 
-%description -l pl
-kX Generator to narzêdzie do konfiguracji X serwera poprzez
+%description -l pl.UTF-8
+kX Generator to narzÄ™dzie do konfiguracji X serwera poprzez
 modyfikowanie pliku xorg.conf.
 
 %prep
